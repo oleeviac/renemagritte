@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    </head>
+
+    <body>  
+        <div id="includeHeader"></div>
+        <script>
+            $(function(){
+                $("#includeHeader").load("header.html");
+            });
+        </script>
+
+        <div class="main-container">
+            <a href="./p1.html">
+                <div class="projects" id="project1">
+                    <h1>The Son of Man </h1>
+                    <img class="project-img circle-cursor" id="work1" src="./img/son-of-man.jpeg">
+                </div>
+            </a>
+            
+            <a href="./p2.html">
+                <div class="projects" id="project2">
+                    <h1>The Lovers II </h1>
+                    <img class="project-img" id="work2" src="./img/the-lovers-2.jpeg">
+                </div>
+            </a>
+            
+            <a href="./p3.html">
+                <div class="projects" id="project3">
+                    <h1>Golconda </h1>
+                    <img class="project-img" id="work3" src="./img/golconda.jpeg"> 
+                </div>
+            </a>
+        </div>
+        
+ 
+    <script src="./movement.js"></script>
+    </body>
+</html>

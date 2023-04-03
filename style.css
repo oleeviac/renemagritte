@@ -1,0 +1,149 @@
+* {
+    font-family: "didot", serif;
+    background-color: #ECF4FF;
+  }
+  
+body{
+    position: relative;
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 0 10px;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+}
+
+.main-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 50%;
+    left: 50%; 
+    padding: 0;
+    transform: translate(-50%, -50%);
+}
+
+.project-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+    padding: 0;
+    /* top: 50%;
+    left: 50%; 
+    padding: 0;
+    transform: translate(-50%, -50%); */
+
+}
+
+
+
+.text-container{
+    position: relative;
+    top: 40px;
+    color: #281922;
+}
+
+#title{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 64px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.17em;
+}
+
+a{
+    text-decoration: none;
+}
+
+nav{
+    display: block;
+    height: 100px;
+    margin-bottom: 80px;
+    z-index: 2;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+  
+nav li {
+    margin: 0 10px;
+    padding: 10px;
+    position: relative;
+    list-style:none;
+    text-decoration: none;
+}
+  
+nav a {
+    display: block;
+    padding: 10px;
+    color: #281922;
+    text-decoration: none;
+    letter-spacing: 0.27em;
+    font-size: 12px;
+    text-align: center;
+}
+
+nav a:visited{
+    text-decoration: none;
+    color: #281922;
+}
+
+#text1{
+    display: block;
+}
+
+#text2{
+    display: none;
+}
+
+
+h1{
+    font-size: 140px;
+    color: #281922; 
+}
+
+h2{
+    font-size: 32px;
+    color: #281922;  
+}
+
+
+.projects{
+    position: relative;
+    cursor: pointer;
+    height: auto;
+    margin-bottom: 80px;
+}
+
+.project-img {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    object-fit: cover;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+  }
+  
+.projects:hover .project-img{
+    display: block;
+    opacity: 1;
+}
+
